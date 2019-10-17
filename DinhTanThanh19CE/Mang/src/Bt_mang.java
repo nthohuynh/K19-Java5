@@ -39,7 +39,22 @@ public class Bt_mang {
 		}
 		System.out.println();
 		System.out.println("tong mang ="+tong);
-
+		//sap xep mang
+		for (int i = 0; i < 4; i++) {
+			for (int j = i+1; j < 5; j++) {
+				if (x[i]>x[j]) {
+					int dem = x[i];
+					x[i] = x[j];
+					x[j] = dem;
+					
+				}						
+			}
+			
+		}
+		System.out.println("in ra mang");
+		for (int i = 0; i < 5; i++) {
+			System.out.print("\t"+x[i]);
 	}
 
+}
 }
